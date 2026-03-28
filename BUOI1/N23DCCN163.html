@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MySite</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-blue-600 px-6 py-3 flex items-center justify-between">
+    <span class="text-white font-bold text-lg">MySite</span>
+
+    <!-- Mobile: ẩn menu, hiện icon hamburger -->
+    <div class="md:hidden text-white text-2xl cursor-pointer">&#9776;</div>
+
+    <!-- Desktop: hiện menu -->
+    <ul class="hidden md:flex gap-6 text-white text-sm">
+      <li><a href="#" class="hover:underline">Home</a></li>
+      <li><a href="#" class="hover:underline">About</a></li>
+      <li><a href="#" class="hover:underline">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <main class="flex flex-col md:flex-row items-center justify-center gap-8 px-10 py-16">
+
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img
+        src="data:image/png;base64,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"
+        alt="Tailwind CSS Logo"
+        class="w-24 md:w-36"
+      />
+    </div>
+
+    <!-- Text + Button -->
+    <div class="text-center md:text-left">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        Learn Tailwind CSS
+      </h1>
+      <p class="text-gray-500 mb-4 text-sm md:text-base">
+        Build responsive layouts quickly with utility-first CSS.
+      </p>
+      <button
+        class="bg-blue-600 text-white px-5 py-2 rounded text-sm
+               hover:bg-blue-800 transition-colors duration-200"
+      >
+        Get Started
+      </button>
+    </div>
+
+  </main>
+
+</body>
+</html>
